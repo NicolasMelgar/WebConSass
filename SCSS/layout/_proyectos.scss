@@ -1,0 +1,25 @@
+.proyectos-cont{
+    text-align: center;
+    height: auto;
+    background-image: url(../IMG/ciudad-fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed; /*Prallax*/
+    color: white;
+    padding: 25px;
+}
+
+.fondo-div {
+    border-radius: 20px;
+    box-shadow: 8px 8px 5px rgb(200, 166, 166);
+    background-color: rgba(94, 86, 86, 0.3); /*eje x eje y blur color*/
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+/*Cambiar a una clase si estoy seguro que sobreescribe BTS*/
+#titulo2, #titulo3, #titulo4, #titulo5, #titulo6, #titulo7{
+    font-size: 65px;
+    margin-top: 50px;
+}
