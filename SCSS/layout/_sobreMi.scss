@@ -3,23 +3,23 @@
     background-color: black;
     color: white;
     padding: 20px 20px;
-}
 
-.fondo-gris{
-    background-color: rgba(172, 170, 170, 0.5);
-    text-align: center;
-}
-
-.sobre-Img{
+    .sobre-Img{
     border-radius: 20px;
     margin: 5px;
     max-height: 450px;
     min-height: 300px;
     width: auto;
+    }
 }
 
-.fondo-gris .list-group-item a:hover{
-    background-color: rgb(71, 7, 7);
-    color: bisque;
+.fondo-gris{
+    background-color: rgba(172, 170, 170, 0.5);
+    text-align: center;
+
+    .list-group-item a:hover{
+    background-color: $color-boton;
+    color: $color-fondo-btn-hover;
+    }
 }
 
