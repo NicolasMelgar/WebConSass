@@ -24,7 +24,13 @@ html {
   align-items: center;
   width: 100%;
 }
-.portada .video-container {
+
+#Inicio {
+  margin: 0;
+  padding: 0;
+}
+
+.video-container {
   position: relative;
   justify-content: center;
   min-height: 95vh;
@@ -32,7 +38,9 @@ html {
   text-align: center;
   overflow: hidden;
 }
-.portada .video-container video {
+
+/*Esto se debe poder hacer en una sola cascada con sass*/
+.video-container video {
   position: absolute;
   left: 0;
   top: 0;
@@ -42,16 +50,25 @@ html {
   object-fit: cover;
   z-index: -1;
 }
-.portada .video-container .titulo {
+
+.video-container .titulo {
   font-size: 140px;
   color: aliceblue;
   text-align: center;
   margin-top: 60px;
 }
-.portada .video-container #parrafoPortada {
+
+.video-container #parrafoPortada {
   font-size: 45px;
   color: white;
   text-align: center;
+}
+
+.linkPortada {
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  margin: auto;
 }
 
 /*---:::ESTO HACE EL EFECTO FLUOR (Extraido del youtube de CoderHouse:::---*/
@@ -83,7 +100,6 @@ h1:hover span {
 }
 
 /*-------------------------*/
-/*Puedo armar una variable con este y el miBotonChico y reducir código*/
 #miBoton, .miBotonChico {
   background-color: rgba(128, 128, 128, 0.4);
   border-width: 3px;
@@ -183,7 +199,7 @@ h1:hover span {
 @media screen and (max-width: 376px) {
   .video-container .titulo {
     font-size: 40px;
-    margin-top: 70px;
+    margin-top: 80px;
     margin-bottom: 40px;
   }
   .video-container #parrafoPortada {
@@ -196,12 +212,7 @@ h1:hover span {
     margin-bottom: 20px;
     font-weight: 700;
   }
-  #titulo2,
-  #titulo3,
-  #titulo4,
-  #titulo5,
-  #titulo6,
-  #titulo7 {
+  #titulo2, #titulo3, #titulo4, #titulo5, #titulo6, #titulo7 {
     font-size: 35px;
     margin-top: 25px;
   }
