@@ -5,29 +5,34 @@
   box-sizing: border-box;
 }
 
+#titulo2, #titulo3, #titulo4, #titulo5, #titulo6, #titulo7 {
+  font-size: 65px;
+  margin-top: 50px;
+}
+
+.margenParaScroll {
+  scroll-margin-top: 8vh !important;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
 .portada {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-
-#Inicio {
-  margin: 0;
-  padding: 0;
-}
-
-.video-container {
+.portada .video-container {
   position: relative;
   justify-content: center;
   min-height: 95vh;
   width: 100vw;
   text-align: center;
-  overflow: hidden; /*esto saca lo que sobra del video*/
+  overflow: hidden;
 }
-
-/*Esto se debe poder hacer en una sola cascada con sass*/
-.video-container video {
+.portada .video-container video {
   position: absolute;
   left: 0;
   top: 0;
@@ -37,25 +42,16 @@
   object-fit: cover;
   z-index: -1;
 }
-
-.video-container .titulo {
+.portada .video-container .titulo {
   font-size: 140px;
   color: aliceblue;
   text-align: center;
   margin-top: 60px;
 }
-
-.video-container #parrafoPortada {
+.portada .video-container #parrafoPortada {
   font-size: 45px;
   color: white;
   text-align: center;
-}
-
-.linkPortada {
-  text-align: center;
-  justify-content: center;
-  justify-items: center;
-  margin: auto;
 }
 
 /*---:::ESTO HACE EL EFECTO FLUOR (Extraido del youtube de CoderHouse:::---*/
@@ -100,6 +96,10 @@ h1:hover span {
   font-weight: bold;
   color: white;
 }
+#miBoton:hover, .miBotonChico:hover {
+  background-color: rgb(71, 7, 7);
+  color: bisque;
+}
 
 .miBotonChico {
   border-width: 2px;
@@ -108,22 +108,16 @@ h1:hover span {
   color: rgb(71, 7, 7);
   font-size: 1.3rem;
 }
-
-#miBoton:hover, .miBotonChico:hover {
+.miBotonChico:hover {
   background-color: rgb(71, 7, 7);
   color: bisque;
-}
-
-#retrato {
-  border-radius: 50%;
 }
 
 .skill {
   text-align: center;
   margin-bottom: 20px;
 }
-
-.skill-Img {
+.skill .skill-Img {
   border-radius: 20px;
   margin-top: 45px;
   width: auto;
@@ -136,13 +130,7 @@ h1:hover span {
   color: white;
   padding: 20px 20px;
 }
-
-.fondo-gris {
-  background-color: rgba(172, 170, 170, 0.5);
-  text-align: center;
-}
-
-.sobre-Img {
+.fondo-oscuro .sobre-Img {
   border-radius: 20px;
   margin: 5px;
   max-height: 450px;
@@ -150,6 +138,10 @@ h1:hover span {
   width: auto;
 }
 
+.fondo-gris {
+  background-color: rgba(172, 170, 170, 0.5);
+  text-align: center;
+}
 .fondo-gris .list-group-item a:hover {
   background-color: rgb(71, 7, 7);
   color: bisque;
@@ -173,12 +165,6 @@ h1:hover span {
   display: flex;
   align-items: center;
   margin-bottom: 60px;
-}
-
-/*Cambiar a una clase si estoy seguro que sobreescribe BTS*/
-#titulo2, #titulo3, #titulo4, #titulo5, #titulo6, #titulo7 {
-  font-size: 65px;
-  margin-top: 50px;
 }
 
 .contacto-form {
@@ -206,7 +192,12 @@ h1:hover span {
     margin-bottom: 20px;
     font-weight: 700;
   }
-  #titulo2, #titulo3, #titulo4, #titulo5, #titulo6, #titulo7 {
+  #titulo2,
+  #titulo3,
+  #titulo4,
+  #titulo5,
+  #titulo6,
+  #titulo7 {
     font-size: 35px;
     margin-top: 25px;
   }
@@ -227,7 +218,12 @@ h1:hover span {
     margin-bottom: 20px;
     font-weight: 700;
   }
-  #titulo2, #titulo3, #titulo4, #titulo5, #titulo6, #titulo7 {
+  #titulo2,
+  #titulo3,
+  #titulo4,
+  #titulo5,
+  #titulo6,
+  #titulo7 {
     font-size: 45px;
     margin-top: 30px;
   }
@@ -247,7 +243,12 @@ h1:hover span {
     margin-bottom: 20px;
     font-weight: 700;
   }
-  #titulo2, #titulo3, #titulo4, #titulo5, #titulo6, #titulo7 {
+  #titulo2,
+  #titulo3,
+  #titulo4,
+  #titulo5,
+  #titulo6,
+  #titulo7 {
     font-size: 55px;
     margin-top: 30px;
   }

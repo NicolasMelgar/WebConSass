@@ -20,9 +20,7 @@
 
 </head>
 
-<body>
-
-    <!-- NavBar (tuve que agregar JS porque no encontré modo de cerrar modal con CSS y HTMA solo)-->
+<body>  
     <!-- SECCION HEADER -->
     <header>
         <nav class="navbar  bg-black fixed-top">
@@ -70,8 +68,9 @@
 
     <!-- SECCION INICIO -->
     <!-- Para SEO mi H1 no sirve -->
-    <section id="Inicio" class="portada row d-flex">
+    <section id="Inicio" class="portada row d-flex margenParaScroll">
         <div class="video-container col-12">
+            <!-- IMPORTANTÍSIMO - poster="" me deja poner una IMG que se verá hasta tanto cargue el video -->
             <video id="video-portada" src="IMG/video4.mp4" autoplay loop muted  poster="IMG/ciudad-fondo.jpg">
             </video>
             <h1 class="titulo col-12"> <span>N</span><span>M</span></h1>
@@ -84,7 +83,7 @@
     </section>
 
     <!-- SECCION HABILIDADES / HERRAMIENTAS-->
-    <section id="Habilidades">
+    <section id="Habilidades" class="margenParaScroll" >
         <div class="container-fluid skill">
             <h1 class="text-center" id="titulo2">HERRAMIENTAS</h1>
             <hr>
@@ -111,12 +110,12 @@
                     <img class="skill-Img" src="IMG/sasslogo.png" alt="Logo SASS">
                     <h2>SASS</h2>
                     <p class="mb-0">Este es un precompilador para usar con CSS 3. Su virtud radica en hacer más breve el
-                        código y permite crear variables que facilitan el desarrollo y el diseño web.</p>
+                        código y permite crear variables y funciones que facilitan el desarrollo y el diseño web.</p>
                 </div>
                 <div class="col-md-4 mb-0">
                     <img class="skill-Img" src="IMG/JSlogo.jpg" alt="Logo JavaScript">
                     <h2>JavaScript</h2>
-                    <p class="mb-0">Sin dudas Java es un lenguaje de programación muy vigente actualmente. Todas
+                    <p class="mb-0">Sin dudas Java es un lenguaje de programación muy vigente actualmente. Aunque no son lo mismo, JS hereda muchos aspectos y me gusta considerarlo un hijo de JAVA. Todas
                         aquellas
                         funciones que tienen que ver con la interacción del usuario con nuestro sitio. Mis estudios en
                         JS
@@ -143,9 +142,8 @@
         </div>
     </section>
 
-
     <!-- SECCION SOBRE MI -->
-    <section id="SobreMi">
+    <section id="SobreMi" class="margenParaScroll">
         <div class="container-fluid">
             <h1 id="titulo3" class="text-center mt-5">SOBRE MI</h1>
             <hr>
@@ -175,9 +173,9 @@
                     <br>
                     <p class="text-center lead">
                         CoderHouse <br>
-                        FreeCodeCampbr <br>
+                        FreeCodeCamp <br>
                         OpenBootCamp <br>
-                        W3schoolbr <br>
+                        W3school <br>
                     </p>
                 </div>
 
@@ -193,7 +191,7 @@
                         forma de cassette. Luego llegaron los CD's que dieron rápidamente inicio a la era de los DVD's.
                         En
                         paralelo, la computadora llegaba a la vida de las personas. En un principio, el hardware era más
-                        importante que el software. Esto se debeía a que no existía tanto desarrollo de software. Una
+                        importante que el software. Esto se debía a que no existía tanto desarrollo de software. Una
                         profesión de vanguardia era el armado y reparación de PC'.
                         <br>
                         Actualmente, la situación del hardware es una vorágine, pero no tan notoria para la gente común
@@ -272,11 +270,11 @@
     <hr>
 
     <!-- SECCION PROYECTOS -->
-    <section id="Proyectos">
+    <section id="Proyectos" class="margenParaScroll">
         <div class="container-fluid proyectos-cont ">
 
             <!-- <h2 id="titulo4">PORTAFOLIO</h2> -->
-            <h2 class="Mititulo">PORTAFOLIO</h2>
+            <h2 id="titulo4">PORTAFOLIO</h2>
             <h3 class="mb-5">Aquí están tres proyectos <br>Cada uno posee una breve descripción y el acceso a todos los
                 repositorios.
             </h3>
@@ -388,7 +386,7 @@
     <hr>
 
     <!--SECCION CONTACTO -->
-    <section id="Contacto">
+    <section id="Contacto" class="margenParaScroll">
         <div class="container-fluid col-12 contacto-form my-5 ">
             <div class="col-12 justify-content-center" style="width: 60vw; margin: auto">
                 <h2>¿Hablamos?</h2>
@@ -419,7 +417,6 @@
             <!-- </div> -->
         </div>
     </section>
-
 
     <!-- SECCION FOOTER -->
     <footer>

@@ -3,3 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+#titulo2, #titulo3, #titulo4, #titulo5, #titulo6, #titulo7{
+    font-size: 65px;
+    margin-top: 50px;
+}
+
+.margenParaScroll{
+    scroll-margin-top: 8vh !important;
+}
+
+html{
+    scroll-behavior: smooth !important;
+}
