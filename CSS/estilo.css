@@ -124,6 +124,10 @@ h1:hover span {
   height: 150px;
 }
 
+.bg-personal {
+  background-color: rgb(71, 7, 7);
+}
+
 /*---::: SECCION SOBRE MI :::---*/
 .fondo-oscuro {
   background-color: black;
