@@ -8,6 +8,9 @@ $fondo-gris: grey;
 @import "./base/reset"; 
 @import "./base/variables";
 
+
+@import "./efectos/hover";
+
 @import "./layout/portada";
 @import "./efectos/efectoportada";
 @import "./components/botones";
